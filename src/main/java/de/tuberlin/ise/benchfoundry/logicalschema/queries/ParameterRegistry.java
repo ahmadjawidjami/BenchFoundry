@@ -81,10 +81,12 @@ public class ParameterRegistry {
 	 */
 	public List<String> getCustomParamForID(int id) {
 		List<String> res = custparams.get(id);
+		/**
 		if (res == null)
 			throw new RuntimeException(
 					"There was no registered custom parameter for the requested param ID "
 							+ id);
+		*/
 		return res;
 	}
 
