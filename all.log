@@ -1,0 +1,46 @@
+2017-01-03 16:16:51.291 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Starting BenchFoundry slave.
+2017-01-03 16:16:51.296 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Starting benchmark slave server as daemon on port 9091.
+2017-01-03 16:16:51.329 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Waiting for configuration details and input files now (if not already received).
+2017-01-03 16:18:20.165 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received configuration details.
+2017-01-03 16:18:20.476 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received schema file.
+2017-01-03 16:18:20.486 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received oplist file.
+2017-01-03 16:18:20.567 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received param file.
+2017-01-03 16:18:20.603 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received cust param file.
+2017-01-03 16:18:20.609 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received dbconnector config file.
+2017-01-03 16:18:20.634 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received preload trace.
+2017-01-03 16:18:20.635 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received warmup trace.
+2017-01-03 16:18:20.636 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - All config files received.
+2017-01-03 16:18:20.647 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received experiment trace.
+2017-01-03 16:18:20.714 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Accepted commit for PRELOAD phase.
+2017-01-03 16:18:20.719 [Thrift] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from INIT to PRELOAD
+2017-01-03 16:18:20.910 [main] INFO  de.tuberlin.ise.benchfoundry.logicalschema.queries.ParameterRegistry - Running without custom parameters.
+2017-01-03 16:18:20.970 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Connecting to SUT
+2017-01-03 16:18:20.984 [main] INFO  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - Successfully established connection to database 'test'.
+2017-01-03 16:18:20.986 [main] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase PRELOAD initialized.
+2017-01-03 16:18:20.987 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase PRELOAD started.
+2017-01-03 16:18:21.003 [PRELOAD-thread-0] INFO  de.tuberlin.ise.benchfoundry.results.ResultLogger - Output directory results created.
+2017-01-03 16:18:24.544 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Shutdown of scheduler for phase PRELOAD initiated.
+2017-01-03 16:18:24.544 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase PRELOAD terminated (business processes may still be running).
+2017-01-03 16:18:24.565 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - All processes of phase PRELOAD terminated.
+2017-01-03 16:18:24.566 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from PRELOAD to WARMUP
+2017-01-03 16:18:24.566 [main] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase WARMUP initialized.
+2017-01-03 16:18:24.567 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase WARMUP started.
+2017-01-03 16:18:24.567 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Shutdown of scheduler for phase WARMUP initiated.
+2017-01-03 16:18:24.568 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase WARMUP terminated (business processes may still be running).
+2017-01-03 16:18:24.568 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - All processes of phase WARMUP terminated.
+2017-01-03 16:18:54.376 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Received a proposed start time 16:19:24,323 for phase EXPERIMENT, response: ACCEPT
+2017-01-03 16:18:54.400 [Thrift] INFO  de.tuberlin.ise.benchfoundry.rpc.BenchmarkSlaveServiceHandler - Accepted commit for EXPERIMENT start timestamp: 16:19:24,323
+2017-01-03 16:18:54.405 [Thrift] INFO  de.tuberlin.ise.benchfoundry.util.Time - Start time for experiment phase has been set to 16:19:24,323
+2017-01-03 16:19:22.819 [main] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler for phase EXPERIMENT initialized.
+2017-01-03 16:19:22.820 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler for phase EXPERIMENT started.
+2017-01-03 16:19:24.318 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from WARMUP to EXPERIMENT
+2017-01-03 16:19:24.318 [LOG] INFO  de.tuberlin.ise.benchfoundry.results.ResultLogger - ResultLogger started.
+2017-01-03 16:21:21.822 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Shutdown of scheduler for phase EXPERIMENT initiated.
+2017-01-03 16:21:21.822 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler for phase EXPERIMENT terminated (business processes may still be running).
+2017-01-03 16:21:23.374 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Some business processes are still running.
+2017-01-03 16:21:23.374 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler is terminated.
+2017-01-03 16:21:23.375 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from EXPERIMENT to CLEANUP
+2017-01-03 16:21:23.378 [main] INFO  de.tuberlin.ise.benchfoundry.util.MicroStatisticsCollector - Scheduling delays (0 is optimal): earliest=0.0, latest=3.0, average=0.10416666666666669, average of absolutes=0.10416666666666669, total number=480
+2017-01-03 16:21:23.379 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Closing connection to SUT
+2017-01-03 16:21:23.380 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from CLEANUP to TERMINATED
+2017-01-03 16:21:23.383 [LOG] INFO  de.tuberlin.ise.benchfoundry.results.ResultLogger - ResultLogger terminated.
